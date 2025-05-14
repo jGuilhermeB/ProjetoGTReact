@@ -1,14 +1,10 @@
 import React from 'react'
-import Layout from 'react-router-dom'
 
- const Layout = () => {
-  return (
-<>
-        <h1>ola mundo</h1>
-
-
-    <HomePage/>
-    </>
-  )
+const HomePage = () => {
+    return (
+        <>
+            <h1>ola mundo</h1>
+        </>
+    )
 }
-export default Layout
+export default HomePage
