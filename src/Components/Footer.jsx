@@ -57,5 +57,5 @@ const Footer = () => {
         <p className="text-center text-white text-sm py-5">&copy; 2022 Digital College</p>
       </div>
     </footer>
-  );
-};
+  )
+}
