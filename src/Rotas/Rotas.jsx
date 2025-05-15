@@ -12,7 +12,7 @@ const Rotas = () => {
                 <Route path='/' element={<Layout />}>
                     <Route index element={<HomePage />} />
                     <Route path='produtos' element={<ProductViewPage />} />
-                    <Route path='product/:id' element={<ProductListingPage />} />
+                    <Route path='product' element={<ProductListingPage />} />
                 </Route>
 
             </Routes>

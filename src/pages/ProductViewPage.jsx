@@ -1,8 +1,11 @@
 import React from 'react'
+import ProductDetails from '../Components/ProductDetails'
 
 const ProductViewPage = () => {
   return (
-    <div>ProductViewPage</div>
+    <>
+    <ProductDetails/>
+    </>
   )
 }
 export default ProductViewPage
