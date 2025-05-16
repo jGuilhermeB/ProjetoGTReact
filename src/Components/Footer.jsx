@@ -1,14 +1,16 @@
-const Footer = () => {
+import logo from "../assets/logo.svg"
+
+export const Footer = () => {
   return (
     <footer className="bg-[#1F1F1F] w-full mt-70 p-3">
       <nav className="p-10">
         <div className="flex flex-col md:flex-row justify-between items-start w-full gap-10 text-white">
           
           <div className="max-w-sm">
-            <img className="mb-4" src="../assets/logo.svg" alt="Logo" />
-            <p className="my-3">
-              Lorem ipsum dolor sit amet, consectetur <br />
-              adipiscing elit, sed do eiusmod tempor <br />
+            <img className="mb-4" src={logo} alt="Logo" />
+            <p className="my-6">
+              Lorem ipsum dolor sit amet, consectetur 
+              adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore.
             </p>
             <div className="flex gap-2 mt-2">
