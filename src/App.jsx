@@ -1,5 +1,6 @@
 
 import Rotas from "./Rotas/Rotas"
+import './App.css'
 
 function App() {
 
