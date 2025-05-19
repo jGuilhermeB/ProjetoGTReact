@@ -6,13 +6,13 @@ import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png'
 const ProductDetails = ({ productId }) => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center">
-      <div>
-        {/* <h1 className="text-2xl font-bold mb-4 bg-amber-500 ">
+      <div className='flex'>
+         <h1 className="text-2xl font-bold mb-4 bg-amber-500 ">
           Tênis Nike Revolution 6 Next Nature Masculino
-        </h1> */}
+        </h1> 
       </div>
       <div className='w-[700px] h-[570px] rounded-sm '>
-        <Carousel arrows infinite={false}>
+        <Carousel arrows infinite={false} dots={false} >
           <div className='w-full h-full flex items-center justify-center bg-[#E2E3FF]'>
             <img
               src={sneakerImg}
