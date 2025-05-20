@@ -39,7 +39,7 @@ const ProductDetails = ({ productId }) => {
           </div>
         </Carousel>
       </div>
-      <div className='flex w-full'>
+      <div className='flex h-[72px]'>
          <h1 className="text-2xl font-bold mb-4 bg-amber-500 ">
           Tênis Nike Revolution 6 Next Nature Masculino
         </h1> 
