@@ -1,22 +1,25 @@
 import logo from "../assets/logo.svg"
+import { FaFacebook } from "react-icons/fa6"
+import { FaInstagram } from "react-icons/fa6"
+import { FaTwitter } from "react-icons/fa6"
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#1F1F1F] w-full mt-70 p-3">
+    <footer className="bg-[#1F1F1F] w-full mt-[100%] p-5">
       <nav className="p-10">
         <div className="flex flex-col md:flex-row justify-between items-start w-full gap-10 text-white">
           
-          <div className="max-w-sm">
+          <div className="max-w-md">
             <img className="mb-4" src={logo} alt="Logo" />
-            <p className="my-6">
+            <p className="my-6 w-[70%] text-sm ">
               Lorem ipsum dolor sit amet, consectetur 
               adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore.
             </p>
-            <div className="flex gap-2 mt-2">
-              <i className="fa-brands fa-facebook-f p-2" style={{ color: "#ffffff" }}></i>
-              <i className="fa-brands fa-instagram p-2" style={{ color: "#ffffff" }}></i>
-              <i className="fa-brands fa-x-twitter p-2" style={{ color: "#ffffff" }}></i>
+            <div className="flex gap-2 mt-2 ">
+              <FaFacebook/>
+              <FaInstagram/>
+              <FaTwitter/>
             </div>
           </div>
 
