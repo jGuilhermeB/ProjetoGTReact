@@ -7,7 +7,7 @@ const ProductDetails = () => {
     <>
       <h1 className ="bg-amber-950 font-bold 2xl:" >Product Details e ola mundo</h1>
 
-      <div className=' w-full flex justify-items-center '>
+      <div className=''>
         <div className=' '>
           <Carousel arrows infinite={false} >
             <div>
