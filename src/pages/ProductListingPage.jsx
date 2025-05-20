@@ -1,9 +1,12 @@
 import React from 'react'
-import ProductDetails from '../Components/ProductDetails'
 
- const ProductListingPage = () => {
+const ProductListingPage = () => {
   return (
-    <ProductDetails/>
+    <div>
+      {/* Aqui vai a listagem de produtos */}
+      <h2>Listagem de Produtos</h2>
+    </div>
   )
 }
+
 export default ProductListingPage

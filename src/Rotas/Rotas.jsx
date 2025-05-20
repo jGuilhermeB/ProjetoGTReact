@@ -11,13 +11,11 @@ const Rotas = () => {
             <Routes>
                 <Route path='/' element={<Layout />}>
                     <Route index element={<HomePage />} />
-                    <Route path='produtos' element={<ProductViewPage />} />
-                    <Route path='product' element={<ProductListingPage />} />
+                    <Route path='produtos' element={<ProductListingPage />} />
+                    <Route path='product/:id' element={<ProductViewPage />} />
                 </Route>
-
             </Routes>
         </BrowserRouter>
-
     )
 }
-export default Rotas 
+export default Rotas

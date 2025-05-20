@@ -1,1 +1,8 @@
 @import "tailwindcss";
+.ant-carousel .slick-arrow {
+  color: #474747!important;      /* seta vermelha */
+  border-color: #474747 !important;
+}
+.ant-carousel .slick-arrow:before {
+  color: #474747 !important;      /* seta vermelha */
+}
