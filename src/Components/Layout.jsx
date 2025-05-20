@@ -5,11 +5,13 @@ import { Footer } from './Footer'
 
  const Layout = () => {
   return (
-    <>
+    <div className="h-screen flex flex-col">
     <Header/>
-    <Outlet/>
+    <main className="bg-[#F9F8FE] h-full">
+        <Outlet/>
+    </main>
     <Footer/>
-    </>
+</div>
   )
 }
 export default Layout
