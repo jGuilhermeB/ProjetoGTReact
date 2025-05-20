@@ -3,7 +3,8 @@ import { Carousel } from 'antd'
 import '../App.css'
 import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png'
 
-const ProductDetails = ({ ProductId }) => {
+const ProductDetails = ({id}) => {
+  
   return (
 
     <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-10">

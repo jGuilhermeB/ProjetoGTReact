@@ -4,6 +4,7 @@ import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
 import Layout  from '../Components/Layout'
+import ShowThumbs from '../Components/ShowThumbs'
 
 const Rotas = () => {
     return (
@@ -13,6 +14,9 @@ const Rotas = () => {
                     <Route index element={<HomePage />} />
                     <Route path='produtos' element={<ProductListingPage />} />
                     <Route path='product/:id' element={<ProductViewPage />} />
+                    {/* abaixo daqui apenas para vizualizar  */}
+                    <Route path='st' element={<ShowThumbs />} />
+
                 </Route>
             </Routes>
         </BrowserRouter>

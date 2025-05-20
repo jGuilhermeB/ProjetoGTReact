@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ShowThumbs = (ProductId) => {
+const MiniCards = () => {
   return (
     <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-10">
        {/* <div className='flex w-full'>
@@ -8,30 +8,29 @@ const ShowThumbs = (ProductId) => {
           Tênis Nike Revolution 6 Next Nature Masculino
         </h1> 
       </div> */}
+      
       <div className='w-[700px] h-[570px] rounded-sm '>
         <ShowThumbs >
+        <h1>Cards pequenos</h1>
           <div className='w-full h-full flex items-center justify-center bg-[#E2E3FF]'>
-            <img src={sneakerImg} alt="Tênis"
+            <img alt="Tênis"
               className=" w-[400px] h-[400px] mx-auto rounded-bl-sm"
             />
           </div>
           <div className='w-full h-full flex items-center justify-center  bg-[#FFE8BC]'>
             <img
-              src={sneakerImg}
               alt="Tênis"
               className=" w-[400px] h-[400px] mx-auto rounded-bl-sm"
             />
           </div>
           <div className='w-full h-full flex items-center justify-center bg-[#FFC0BC]'>
             <img
-              src={sneakerImg}
               alt="Tênis"
               className=" w-[400px] h-[400px] mx-auto rounded-bl-sm"
             />
           </div>
           <div className='w-full h-full flex items-center justify-center bg-[#E8DFCF]'>
             <img
-              src={sneakerImg}
               alt="Tênis"
               className=" w-[400px] h-[400px] mx-auto rounded-bl-sm"
             />
@@ -44,4 +43,4 @@ const ShowThumbs = (ProductId) => {
   )
 }
 
-export default ShowThumbs
+export default MiniCards
