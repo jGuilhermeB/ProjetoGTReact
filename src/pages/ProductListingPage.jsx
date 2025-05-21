@@ -1,8 +1,12 @@
 import React from 'react'
 
- const ProductListingPage = () => {
+const ProductListingPage = () => {
   return (
-    <div>ProductListingPage</div>
+    <div>
+      {/* Aqui vai a listagem de produtos */}
+      <h2>Listagem de Produtos</h2>
+    </div>
   )
 }
+
 export default ProductListingPage
