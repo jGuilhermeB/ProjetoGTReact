@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Carousel from '../Components/Carrousel'
+import CustomCarousel from '../Components/Carrousel'
 
 const ProductViewPage = () => {
   const { id } = useParams()

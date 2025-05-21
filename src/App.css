@@ -1,8 +1,28 @@
 @import "tailwindcss";
+@import "antd/dist/reset.css";
+
 .ant-carousel .slick-arrow {
-  color: #474747!important;      /* seta vermelha */
+  color: #474747!important;
   border-color: #474747 !important;
 }
+
 .ant-carousel .slick-arrow:before {
-  color: #474747 !important;      /* seta vermelha */
+  color: #474747 !important;
 }
+
+
+.ant-carousel .slick-slide {
+  height: 570px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+   width: 570px;
+}
+
+.slide-wrapper {
+  height: 700px;
+  width: 570px;
+}
+
+    
