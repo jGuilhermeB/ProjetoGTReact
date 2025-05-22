@@ -6,7 +6,7 @@ const FilterGroup = () => {
     <aside className="w-1/5 bg-white p-4 rounded shadow">
       <h3 className="text-lg font-semibold border-b pb-2 mb-4">Filtrar por</h3>
 
-      {/* Marca */}
+      
       <div className="mb-4">
         <h4 className="font-bold mb-2">Marca</h4>
         <div className="space-y-1 text-sm">
@@ -18,7 +18,6 @@ const FilterGroup = () => {
         </div>
       </div>
 
-      {/* Categoria */}
       <div className="mb-4">
         <h4 className="font-bold mb-2">Categoria</h4>
         <div className="space-y-1 text-sm">
@@ -29,7 +28,6 @@ const FilterGroup = () => {
         </div>
       </div>
 
-      {/* Gênero */}
       <div className="mb-4">
         <h4 className="font-bold mb-2">Gênero</h4>
         <div className="space-y-1 text-sm">
@@ -39,7 +37,6 @@ const FilterGroup = () => {
         </div>
       </div>
 
-      {/* Estado */}
       <div>
         <h4 className="font-bold mb-2">Estado</h4>
         <div className="space-y-1 text-sm">
