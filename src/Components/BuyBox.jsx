@@ -5,182 +5,72 @@ import { useParams } from 'react-router-dom';
 import CustomCarousel from '../Components/Carrousel';
 import '../App.css';
 
-// const BuyBox = ({
-//   name,
-//   reference,
-//   stars,
-//   rating,
-//   price,
-//   priceDiscount,
-//   description,
-//   children,
-// }) => {
-//   const sizes = [39, 40, 41, 42, 43];
-//   const colorOptions = ['#6FEEFF', '#FF6969', '#5E5E5E', '#6D70B7'];
-
-//   const [selectedSize, setSelectedSize] = useState(null);
-//   const [selectedColor, setSelectedColor] = useState(null);
-//   return (
-//     <div className="w-[700px] h-[570px] rounded-sm flex flex-col gap-4 text-[#1F1F1F] p-6 bg-white shadow">
-//       {/* Título */}
-//       <h1 className="text-2xl font-bold">{name}</h1>
-//       {/* Categoria e código */}
-//       <p className="text-xs text-[#666]">REF: {reference}</p>
-
-//       {/* Estrelas e avaliação */}
-//       <div className="flex items-center gap-2 text-sm">
-//         {/* Estrelas primeiro */}
-//         <div className="flex items-center">
-//           {[1, 2, 3, 4, 5].map(i => (
-//             <Star
-//               key={i}
-//               size={16}
-//               fill={i <= 4 ? '#F6AA1C' : 'none'} // 4 amarelas, 1 vazia
-//               stroke="#F6AA1C" // borda preta
-//             />
-//           ))}
-//         </div>
-//         {/* Valor na caixa amarela depois */}
-//         <span className="font-semibold text-white bg-[#F6AA1C] rounded px-2 py-0.5">
-//           {stars}
-//         </span>
-//         <span className="text-[#8F8F8F]">{rating} avaliações</span>
-//       </div>
- 
-//       {/* Preço */}
-//       <div className="flex items-end gap-2">
-//         {priceDiscount ? (
-//           <>
-//             <span className="text-2xl font-bold text-[#1F1F1F]">
-//               R$ {priceDiscount}
-//             </span>
-//             <span className="line-through text-sm text-[#CCCCCC]">
-//               R$ {price}
-//             </span>
-//           </>
-//         ) : (
-//           <span className="text-2xl font-bold text-[#1F1F1F]">
-//             R$ {price}
-//           </span>
-//         )}
-//       </div>
-
-//       {/* Descrição */}
-//       <div>
-//         <h2 className="font-bold text-[#474747] text-base mb-1">
-//           Descrição do produto
-//         </h2>
-//         <p className="text-sm text-[#666]">{description}</p>
-//       </div>
-
-//       {/* Tamanhos */}
-//       <div>
-//         <h3 className="font-bold mb-2">Tamanho</h3>
-//         <div className="flex gap-2">
-//           {sizes.map(size => (
-//             <button
-//               key={size}
-//               onClick={() => setSelectedSize(size)}
-//               className={`w-10 h-10 border rounded flex items-center justify-center font-bold text-sm 
-//                 ${selectedSize === size ? 'border-[#C92071] bg-[#C92071] text-white!' : 'border-gray-300 bg-white'}`}
-//             >
-//               {size}
-//             </button>
-//           ))}
-//         </div>
-//       </div>
-
-//       {/* Cores */}
-//       <div>
-//         <h3 className="font-bold mt-4 mb-2">Tamanho</h3>
-//         <div className="flex gap-3">
-//           {colorOptions.map((color, i) => (
-//             <button
-//               key={i}
-//               onClick={() => setSelectedColor(color)}
-//               className={`w-6 h-6 rounded-full border-2 flex items-center justify-center 
-//                 ${selectedColor === color ? 'border-[#C92071]' : 'border-transparent'}`}
-//               style={{ backgroundColor: color }}
-//             />
-//           ))}
-//         </div>
-//       </div>
-
-//       {/* Children: opções de variação */}
-//       <div className="mt-2">{children}</div>
-
-//       {/* Botão de compra */}
-//       <button className="mt-auto w-[220px] bg-[#F6AA1C] hover:bg-[#e59b12] text-white! py-3 font-bold rounded text-lg">
-//         COMPRAR
-//       </button>
-//     </div>
-//   );
-// };
-
-// const ProductViewPage = () => {
-//   const { id } = useParams();
-//   return (
-//     <div className="flex gap-8">
-//       <CustomCarousel productId={id} />
-//       <BuyBox
-//         name="Tênis Nike Revolution 6 Next Nature Masculino"
-//         reference="38416711"
-//         stars={4.7}
-//         rating={90}
-//         price={219.0}
-//         priceDiscount={199.0}
-//         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-//       >
-        
-//       </BuyBox>
-//     </div>
-//   );
-// };
-
-// export default BuyBox;const BuyBox = () => {
-const BuyBox = () => {
+const BuyBox = ({
+  name,
+  reference,
+  stars,
+  rating,
+  price,
+  priceDiscount,
+  description,
+  children,
+}) => {
   const sizes = [39, 40, 41, 42, 43];
-  const colors = ['#C92071', '#FFB900', '#B5B6F2', '#000'];
+  const colorOptions = ['#6FEEFF', '#FF6969', '#5E5E5E', '#6D70B7'];
 
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
-
   return (
-    <div className="max-w-md w-full flex flex-col gap-4 text-gray-800">
+    <div className="w-[700px] h-[570px] rounded-sm flex flex-col gap-4 text-[#1F1F1F] p-6 bg-white shadow">
       {/* Título */}
-      <h1 className="text-2xl font-bold leading-tight">
-        Tênis Nike Revolution 6 Next Nature Masculino
-      </h1>
-
+      <h1 className="text-2xl font-bold">{name}</h1>
       {/* Categoria e código */}
-      <p className="text-sm text-gray-500">
-        Casual | Nike | REF: 38416711
-      </p>
+      <p className="text-xs text-[#666]">REF: {reference}</p>
 
       {/* Estrelas e avaliação */}
       <div className="flex items-center gap-2 text-sm">
-        <div className="flex text-yellow-400">
-          {Array(5).fill().map((_, i) => (
-            <Star key={i} size={16} fill="currentColor" stroke="currentColor" />
+        {/* Estrelas primeiro */}
+        <div className="flex items-center">
+          {[1, 2, 3, 4, 5].map(i => (
+            <Star
+              key={i}
+              size={16}
+              fill={i <= 4 ? '#F6AA1C' : 'none'} // 4 amarelas, 1 vazia
+              stroke="#F6AA1C" // borda preta
+            />
           ))}
         </div>
-        <span className="font-semibold text-gray-800">4.7</span>
-        <span className="text-gray-500">(90 avaliações)</span>
+        {/* Valor na caixa amarela depois */}
+        <span className="font-semibold text-white bg-[#F6AA1C] rounded px-2 py-0.5">
+          {stars}
+        </span>
+        <span className="text-[#8F8F8F]">{rating} avaliações</span>
       </div>
-
+ 
       {/* Preço */}
-      <div className="text-lg">
-        <span className="text-2xl font-bold text-[#C92071]">R$ 219,00</span>{' '}
-        <span className="line-through text-gray-400 text-sm">R$ 219,00</span>
+      <div className="flex items-end gap-2">
+        {priceDiscount ? (
+          <>
+            <span className="text-2xl font-bold text-[#1F1F1F]">
+              R$ {priceDiscount}
+            </span>
+            <span className="line-through text-sm text-[#CCCCCC]">
+              R$ {price}
+            </span>
+          </>
+        ) : (
+          <span className="text-2xl font-bold text-[#1F1F1F]">
+            R$ {price}
+          </span>
+        )}
       </div>
 
       {/* Descrição */}
       <div>
-        <h2 className="font-bold text-gray-800">Descrição do produto</h2>
-        <p className="text-sm text-gray-600">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-        </p>
+        <h2 className="font-bold text-[#474747] text-base mb-1">
+          Descrição do produto
+        </h2>
+        <p className="text-sm text-[#666]">{description}</p>
       </div>
 
       {/* Tamanhos */}
@@ -192,7 +82,7 @@ const BuyBox = () => {
               key={size}
               onClick={() => setSelectedSize(size)}
               className={`w-10 h-10 border rounded flex items-center justify-center font-bold text-sm 
-                ${selectedSize === size ? 'border-[#C92071] bg-[#C92071] text-white' : 'border-gray-300 bg-white'}`}
+                ${selectedSize === size ? 'border-[#C92071] bg-[#C92071] text-white!' : 'border-gray-300 bg-white'}`}
             >
               {size}
             </button>
@@ -204,7 +94,7 @@ const BuyBox = () => {
       <div>
         <h3 className="font-bold mt-4 mb-2">Tamanho</h3>
         <div className="flex gap-3">
-          {colors.map((color, i) => (
+          {colorOptions.map((color, i) => (
             <button
               key={i}
               onClick={() => setSelectedColor(color)}
@@ -216,12 +106,35 @@ const BuyBox = () => {
         </div>
       </div>
 
+      {/* Children: opções de variação */}
+      <div className="mt-2">{children}</div>
+
       {/* Botão de compra */}
-      <button className="mt-6 w-full bg-[#F6AA1C] hover:bg-[#e59b12] text-white py-3 font-bold rounded">
+      <button className="mt-auto w-[220px] bg-[#F6AA1C] hover:bg-[#e59b12] text-white! py-3 font-bold rounded text-lg">
         COMPRAR
       </button>
     </div>
   );
 };
 
-export default BuyBox;
+const ProductViewPage = () => {
+  const { id } = useParams();
+  return (
+    <div className="flex gap-8">
+      <CustomCarousel productId={id} />
+      <BuyBox
+        name="Tênis Nike Revolution 6 Next Nature Masculino"
+        reference="38416711"
+        stars={4.7}
+        rating={90}
+        price={219.0}
+        priceDiscount={199.0}
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+      >
+        
+      </BuyBox>
+    </div>
+  );
+};
+
+export default BuyBox
