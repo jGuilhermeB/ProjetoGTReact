@@ -168,7 +168,21 @@ const BuyBox = () => {
         <span className="text-gray-500">(90 avaliações)</span>
       </div>
 
-  
+      {/* Preço */}
+      <div className="text-lg">
+        <span className="text-2xl font-bold text-[#C92071]">R$ 219,00</span>{' '}
+        <span className="line-through text-gray-400 text-sm">R$ 219,00</span>
+      </div>
+
+      {/* Descrição */}
+      <div>
+        <h2 className="font-bold text-gray-800">Descrição do produto</h2>
+        <p className="text-sm text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+        </p>
+      </div>
+
     </div>
   );
 };
