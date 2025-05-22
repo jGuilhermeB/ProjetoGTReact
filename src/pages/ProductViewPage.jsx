@@ -13,7 +13,7 @@ const ProductViewPage = () => {
       <div className="flex-shrink-0">
         <BuyBox
           name="Tênis Nike Revolution 6 Next Nature Masculino"
-          reference="38416711"
+          reference="Casual | Nike | REF:38416711"
           stars={4.7}
           rating={90}
           price={219.0}

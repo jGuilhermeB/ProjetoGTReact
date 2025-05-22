@@ -23,9 +23,9 @@ const BuyBox = ({
   return (
     <div className="w-[700px] h-[570px] rounded-sm flex flex-col gap-4 text-[#1F1F1F] p-6 bg-transparent  mt-10">
       {/* Título */}
-      <h1 className="text-2xl font-bold">{name}</h1>
+      <h1 className="text-2xl font-bold font">{name}</h1>
       {/* Categoria e código */}
-      <p className="text-xs text-[#666]">REF: {reference}</p>
+      <p className="text-xs text-[#666]"> {reference}</p>
 
       {/* Estrelas e avaliação */}
       <div className="flex items-center gap-2 text-sm">
