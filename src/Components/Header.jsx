@@ -1,8 +1,36 @@
+<<<<<<< HEAD
 import { ShoppingCart, Search } from 'react';
 
 export default function Header() {
   return (
     <header className="flex items-center justify-between px-8 py-4 bg-white shadow">
+=======
+import React, { useState } from 'react'
+import { Logo } from './Logo'
+import { SearchField } from './SearchField'
+import { Sing } from './Sing'
+import { Cart } from './Cart'
+import { Navigator } from './Navigator'
+
+const Header = () => {
+
+  const [searchInput, setSearchInput] = useState('')
+  return (
+    <header className='bg-white'>
+      <div className='w-[86%] mx-auto'>
+        <div className="flex justify-between w-full gap-4 items-center">
+          <Logo/>
+          <SearchField searchInput={searchInput} setSearchInput={setSearchInput}/>
+          <Sing/>
+          <Cart/>
+        </div>
+        <Navigator/>
+      </div>
+
+    </header>
+  )
+}
+>>>>>>> 9c4cbb7667ab2bcb417b0187d7f762a3f41251a1
 
       <div className="flex items-center gap-3">
         <img src="/logo-header.svg" alt="Logo Header" className="w-10 h-10">
