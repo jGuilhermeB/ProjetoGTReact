@@ -1,9 +1,12 @@
-import React from 'react'
-import AsideFiltro from '../Components/AsideFiltro'
+import FilterGroup from "../Components/FilterGroup"
 
  const ProductListingPage = () => {
   return (
-    <div>ProductListingPage</div>
+    <div>
+      <h1>produtos</h1>
+      <FilterGroup/>
+      <ProductListingPage/>
+    </div>
   )
 }
 export default ProductListingPage
