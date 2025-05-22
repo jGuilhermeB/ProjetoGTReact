@@ -18,11 +18,15 @@
   justify-content: center;
   background: transparent !important;
    width: 570px;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .slide-wrapper {
   height: 700px;
   width: 570px;
+   padding: 0 !important;
+  margin: 0 !important;
 }
 
     

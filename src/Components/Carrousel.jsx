@@ -30,24 +30,24 @@ const CustomCarousel = () => {
                     dots={false}
                     ref={carouselRef}
                     beforeChange={(_, next) => setSelected(next)}
+                   className=' bg-black '
                 >
                     {slides.map((slide, idx) => (
+                      <div
+                        key={idx}
+                        className="slide-wrapper flex items-center justify-center"
+                      >
                         <div
-                            key={idx}
-                            style={{ height: '100%', width: '100%' }}
-                            className="slide-wrapper"
+                          className="flex items-center justify-center h-full w-full relative z-10"
+                          style={{ backgroundColor: slide.bg, height: '700px', width: '700px', borderRadius: '16px' }} // Cor só na área do tênis
                         >
-                            <div
-                                className="flex items-center justify-center h-full w-full" /* Modificado */
-                                style={{ backgroundColor: slide.bg, height: '100%', width: '100%' }} /* Modificado */
-                            >
-                                <img
-                                    src={sneakerImg}
-                                    alt="Tênis"
-                                    className="object-contain w-[400px] h-[400px] mx-auto"
-                                />
-                            </div>
+                          <img
+                            src={sneakerImg}
+                            alt="Tênis"
+                            className="object-contain w-[400px] h-[400px] mx-auto"
+                          />
                         </div>
+                      </div>
                     ))}
                 </Carousel>
                 <ShowThumbs selected={selected} onSelect={handleThumbClick} />
