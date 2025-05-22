@@ -1,8 +1,20 @@
 import React from 'react'
-
- const BuyBox = () => {
+import '../App.css';
+const BuyBox = () => {
   return (
-    <div>BuyBox</div>
+    <div className='bg-yellow-600'>
+      <h1 className='textfont-bold 2xl:'>Tênis Nike Revolution
+        6 Next Nature Masculino</h1>
+      <h5>Casual | Nike | REF:38416711</h5>
+
+
+
+
+
+
+
+
+    </div>
   )
 }
 
