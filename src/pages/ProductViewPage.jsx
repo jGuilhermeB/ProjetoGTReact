@@ -6,7 +6,7 @@ import BuyBox from '../Components/BuyBox'
 const ProductViewPage = () => {
   const { id } = useParams()
   return (
-    <div className="flex gap-8 items-start justify-center">
+    <div className="flex gap-4 items-start justify-center">
       <div className="flex-shrink-0">
         <CustomCarousel productId={id} />
       </div>
@@ -16,8 +16,8 @@ const ProductViewPage = () => {
           reference="38416711"
           stars={4.7}
           rating={90}
-          price={219.00}
-          priceDiscount={199.00}
+          price={219.0}
+          priceDiscount={199.0}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
         />
       </div>

@@ -21,7 +21,7 @@ const CustomCarousel = () => {
     };
 
     return (
-        <div className="w-full h-full flex flex-col items-center justify-center gap-6 p-10">
+        <div className="w-full h-full flex flex-col items-center justify-center gap-6 ">
             <h2 className="text-2xl font-bold">Carrossel Personalizados</h2>
             <div className="w-[700px] h-[570px] rounded-sm">
                 <Carousel

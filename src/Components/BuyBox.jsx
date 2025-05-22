@@ -21,7 +21,7 @@ const BuyBox = ({
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
   return (
-    <div className="w-[700px] h-[570px] rounded-sm flex flex-col gap-4 text-[#1F1F1F] p-6 bg-white shadow">
+    <div className="w-[700px] h-[570px] rounded-sm flex flex-col gap-4 text-[#1F1F1F] p-6 bg-transparent  mt-10">
       {/* Título */}
       <h1 className="text-2xl font-bold">{name}</h1>
       {/* Categoria e código */}
