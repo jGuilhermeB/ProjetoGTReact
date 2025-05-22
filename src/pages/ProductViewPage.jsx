@@ -1,11 +1,11 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import ProductDetails from '../Components/Carrousel'
+import CustomCarousel from '../Components/Carrousel'
 
 const ProductViewPage = () => {
   const { id } = useParams()
   return (
-    <ProductDetails productId={id} />
+    <CustomCarousel productId={id} />
   )
 }
 export default ProductViewPage
