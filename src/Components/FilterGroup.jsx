@@ -1,5 +1,5 @@
 // src/Components/FilterGroup.jsx
-import React from "react";
+import React from "react"
 
 const FilterGroup = () => {
   return (
@@ -45,7 +45,7 @@ const FilterGroup = () => {
         </div>
       </div>
     </aside>
-  );
-};
+  )
+}
 
-export default FilterGroup;
+export default FilterGroup

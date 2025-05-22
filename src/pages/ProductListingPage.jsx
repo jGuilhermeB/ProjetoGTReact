@@ -1,9 +1,9 @@
 import FilterGroup from "../Components/FilterGroup"
+import ProductListingPage from "../Components/ProductListing"
 
  const ProductListingPage = () => {
   return (
     <div>
-      <h1>produtos</h1>
       <FilterGroup/>
       <ProductListingPage/>
     </div>
