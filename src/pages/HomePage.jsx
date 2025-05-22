@@ -1,10 +1,9 @@
 import React from 'react'
 
 const HomePage = () => {
-    return (
-        <>
-            <h1>ola mundo</h1>
-        </>
-    )
+  return (
+    <div>HomePage</div>
+  )
 }
+
 export default HomePage
