@@ -183,6 +183,43 @@ const BuyBox = () => {
         </p>
       </div>
 
+      {/* Tamanhos */}
+      <div>
+        <h3 className="font-bold mb-2">Tamanho</h3>
+        <div className="flex gap-2">
+          {sizes.map(size => (
+            <button
+              key={size}
+              onClick={() => setSelectedSize(size)}
+              className={`w-10 h-10 border rounded flex items-center justify-center font-bold text-sm 
+                ${selectedSize === size ? 'border-[#C92071] bg-[#C92071] text-white' : 'border-gray-300 bg-white'}`}
+            >
+              {size}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Cores */}
+      <div>
+        <h3 className="font-bold mt-4 mb-2">Tamanho</h3>
+        <div className="flex gap-3">
+          {colors.map((color, i) => (
+            <button
+              key={i}
+              onClick={() => setSelectedColor(color)}
+              className={`w-6 h-6 rounded-full border-2 flex items-center justify-center 
+                ${selectedColor === color ? 'border-[#C92071]' : 'border-transparent'}`}
+              style={{ backgroundColor: color }}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Botão de compra */}
+      <button className="mt-6 w-full bg-[#F6AA1C] hover:bg-[#e59b12] text-white py-3 font-bold rounded">
+        COMPRAR
+      </button>
     </div>
   );
 };
