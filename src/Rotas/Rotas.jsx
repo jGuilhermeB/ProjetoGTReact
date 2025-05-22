@@ -13,7 +13,7 @@ const Rotas = () => {
                 <Route path='/' element={<Layout />}>
                     <Route index element={<HomePage />} />
                     <Route path='produtos' element={<ProductListingPage />} />
-                    <Route path='product/:id' element={<ProductViewPage />} />
+                    <Route path='detalhes' element={<ProductViewPage />} />
                     {/* abaixo daqui apenas para vizualizar  */}
                      <Route path='BuyBox' element={<BuyBox />} />
 
