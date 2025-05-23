@@ -48,6 +48,7 @@ const FeaturedSection = () => {
   {featuredCollections.map((item, i) => (
     <div
       key={i}
+      // div que estiliza os cards
       className="relative w-[300px] h-[160px] bg-[#e7f1fb] rounded-lg p-4 overflow-hidden flex flex-col justify-between shadow"
     >
       {/* Tag de desconto */}
@@ -61,7 +62,7 @@ const FeaturedSection = () => {
       </div>
 
       {/* Botão Comprar */}
-      <button className="mt-3 bg-white text-[#d31e6f] font-bold text-sm px-4 py-1 rounded-md w-fit shadow-sm">
+      <button className="mt-3 bg-white text-[#d31e6f] font-bold text-sm px-4 py-1 rounded-md w-[150px] h-[35px] ">
         {item.button}
       </button>
 
@@ -69,7 +70,7 @@ const FeaturedSection = () => {
       <img
         src={item.image}
         alt={item.title}
-        className="absolute right-[-10px] bottom-0 w-[110px] h-[110px] object-contain"
+        className="absolute right-[-50px] bottom-0 w-[200px] h-[110px] object-contain"
       />
     </div>
   ))}

@@ -30,7 +30,7 @@ const CustomCarousel = () => {
                     dots={false}
                     ref={carouselRef}
                     beforeChange={(_, next) => setSelected(next)}
-                   className=' bg-black '
+                   className=' bgbg-[#F9F8FE] '
                 >
                     {slides.map((slide, idx) => (
                       <div
