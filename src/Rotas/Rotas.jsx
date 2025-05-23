@@ -4,7 +4,7 @@ import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
 import Layout  from '../Components/Layout'
-import BuyBox from '../Components/BuyBox'
+import FeaturedSection from '../Components/ColecoesEmD'
 
 const Rotas = () => {
     return (
@@ -15,7 +15,7 @@ const Rotas = () => {
                     <Route path='produtos' element={<ProductListingPage />} />
                     <Route path='detalhes' element={<ProductViewPage />} />
                     {/* abaixo daqui apenas para vizualizar  */}
-                     <Route path='BuyBox' element={<BuyBox />} />
+                     <Route path='colecoes' element={<FeaturedSection />} />
 
                 </Route>
             </Routes>

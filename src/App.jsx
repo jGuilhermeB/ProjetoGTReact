@@ -1,6 +1,6 @@
 import "./App.css"
 import Rotas from "./Rotas/Rotas"
-import './App.css'
+
 
 
 

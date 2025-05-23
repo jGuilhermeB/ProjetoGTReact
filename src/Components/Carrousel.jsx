@@ -38,7 +38,7 @@ const CustomCarousel = () => {
                         className="slide-wrapper flex items-center justify-center"
                       >
                         <div
-                          className="flex items-center justify-center h-full w-full relative z-10"
+                          className="flex items-center rounded-b-full justify-center h-full w-full relative z-10"
                           style={{ backgroundColor: slide.bg, height: '700px', width: '700px', borderRadius: '16px' }} // Cor só na área do tênis
                         >
                           <img
