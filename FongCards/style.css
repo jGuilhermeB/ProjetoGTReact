@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(227, 225, 247);
+}
+
+.div-card {
+    width: 292px;
+    height: 439px;
+}
+
+.div-card-img {
+    background-color: white;
+    height: 321px;
+    /* position: relative; */
+}
+
+/* 
+.tag-desconto {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    background-color: #a6f793;
+    width: fit-content;
+    padding: 3px 25px;
+    border-radius: 15px;
+} */
