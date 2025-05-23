@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="bg-white min-h-screen">
       {/* Header */}
-      <header className="flex items-center justify-between px-10 py-6 border-b">
+      <header className="flex items-center justify-between px-10 py-6">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-pink-600 rounded-full">
             <span className="text-white text-xl font-bold">&gt;</span>
@@ -29,15 +29,15 @@ export default function Home() {
         {/* Buttons */}
 
         <div className="flex items-center gap-4">
-          <a href="#" className="text-sm text-gray-600 hover:text-pink-700">
+          <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">
             Cadastre-se
           </a>
           
-          <Button className=" bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded" type="primary">Entrar</Button>
+          <Button className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded" type="primary">Entrar</Button>
           
           <div className="relative">
             <FaCartShopping className="h-6 w-6 text-pink-600" />
-            <div className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+            <div className="absolute -top-2 -right-2 bg-pink-600  text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
               2
             </div>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* Navbar */}
 
-      <nav className="flex gap-10 px-10 py-4 border-b">
+      <nav className="flex gap-8 px-10 py-4">
         <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Home</a>
         <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Produtos</a>
         <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Categorias</a>
