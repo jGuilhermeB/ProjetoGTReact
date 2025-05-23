@@ -1,7 +1,5 @@
 import { FaSearch } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
-import { Carousel } from 'antd';
-
 
 import { Button } from 'antd'
 
@@ -34,11 +32,9 @@ export default function Home() {
           <a href="#" className="text-sm text-gray-600 hover:text-pink-700">
             Cadastre-se
           </a>
-          <Button className="bg-pink-600 text-pink-600 border border-pink-600 hover:bg-pink-600 hover:text-pink-600 rounded px-5">
-           Entrar
-          </Button>
           
-
+          <Button className=" bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded" type="primary">Entrar</Button>
+          
           <div className="relative">
             <FaCartShopping className="h-6 w-6 text-pink-600" />
             <div className="absolute -top-2 -right-2 bg-pink-600 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
@@ -50,13 +46,11 @@ export default function Home() {
 
       {/* Navbar */}
 
-      <nav className="flex gap-8 px-10 py-4 border-b">
-        <a href="#" className="text-gray-600 hover:text-pink-600">
-          Home
-        </a>
-        <a href="#" className="text-gray-600 hover:text-pink-600">Produtos</a>
-        <a href="#" className="text-gray-600 hover:text-pink-600">Categorias</a>
-        <a href="#" className="text-gray-600 hover:text-pink-600">Meus Pedidos</a>
+      <nav className="flex gap-10 px-10 py-4 border-b">
+        <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Home</a>
+        <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Produtos</a>
+        <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Categorias</a>
+        <a href="#" className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold">Meus Pedidos</a>
       </nav>
 
       {/* seção */}
@@ -81,7 +75,7 @@ export default function Home() {
           <img
             src='src/assets/White-Sneakers-PNG-Clipart 2.png'
             alt="tenis"
-            className="rotate-345 w-[500px]"
+            className="rotate-345 w-[700px]"
           />
           
 </div>
@@ -91,7 +85,7 @@ export default function Home() {
       {/* paginação */}
       <div className="flex justify-center gap-2 pb-6">
         <div className="w-3 h-3 bg-pink-600 rounded-full" />
-        <div className="w-3 h-3 bg-gray-300 rounded-full" />
+        <div className="w-3 h-3 bg-gray-300 hover:bg-pink-600 rounded-full" />
         <div className="w-3 h-3 bg-gray-300 hover:bg-pink-600 rounded-full" />
       </div>
     </div>
