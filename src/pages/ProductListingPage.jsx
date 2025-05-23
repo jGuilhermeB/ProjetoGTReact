@@ -1,11 +1,11 @@
 import FilterGroup from "../Components/FilterGroup"
-import ProductListingPage from "../Components/ProductListing"
+import OrdenacaoRelevante from "../Components/OrdenacaoRelevante"
 
  const ProductListingPage = () => {
   return (
     <div>
+      <OrdenacaoRelevante/>
       <FilterGroup/>
-      <ProductListingPage/>
     </div>
   )
 }

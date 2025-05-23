@@ -1,4 +1,4 @@
-// src/Components/FilterGroup.jsx
+
 import React from "react"
 
 const FilterGroup = () => {
@@ -9,7 +9,7 @@ const FilterGroup = () => {
       
       <div className="mb-4">
         <h4 className="font-bold mb-2">Marca</h4>
-        <div className="space-y-1 text-sm">
+        <div className=" accent-pink-500 space-y-1 text-sm">
           <label><input type="checkbox" className="mr-1" /> Adidas</label><br />
           <label><input type="checkbox" className="mr-1" /> Balenciaga</label><br />
           <label><input type="checkbox" className="mr-1" checked /> K-Swiss</label><br />
@@ -20,7 +20,7 @@ const FilterGroup = () => {
 
       <div className="mb-4">
         <h4 className="font-bold mb-2">Categoria</h4>
-        <div className="space-y-1 text-sm">
+        <div className=" accent-pink-500 space-y-1 text-sm">
           <label><input type="checkbox" className="mr-1" checked /> Esporte e lazer</label><br />
           <label><input type="checkbox" className="mr-1" /> Casual</label><br />
           <label><input type="checkbox" className="mr-1" /> Utilitário</label><br />
@@ -30,7 +30,7 @@ const FilterGroup = () => {
 
       <div className="mb-4">
         <h4 className="font-bold mb-2">Gênero</h4>
-        <div className="space-y-1 text-sm">
+        <div className=" accent-pink-500 space-y-1 text-sm">
           <label><input type="checkbox" className="mr-1" checked /> Masculino</label><br />
           <label><input type="checkbox" className="mr-1" checked /> Feminino</label><br />
           <label><input type="checkbox" className="mr-1" /> Unisex</label>
@@ -39,8 +39,8 @@ const FilterGroup = () => {
 
       <div>
         <h4 className="font-bold mb-2">Estado</h4>
-        <div className="space-y-1 text-sm">
-          <label><input type="checkbox" className="mr-1" /> Novo</label><br />
+        <div className=" accent-pink-500 space-y-1 text-sm">
+          <label><input type="checkbox" className="mr-1 rounded-full" /> Novo</label><br />
           <label><input type="checkbox" className="mr-1" /> Usado</label>
         </div>
       </div>
