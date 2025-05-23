@@ -43,7 +43,40 @@ const FeaturedSection = () => {
       <h2 className="text-xl font-semibold text-[#1f1f1f] mb-2">
         Coleções em destaque
       </h2>
+      {/* Cards principais */}
+<div className="flex gap-4">
+  {featuredCollections.map((item, i) => (
+    <div
+      key={i}
+      className="relative w-[300px] h-[160px] bg-[#e7f1fb] rounded-lg p-4 overflow-hidden flex flex-col justify-between shadow"
+    >
+      {/* Tag de desconto */}
+      <span className="text-[10px] font-semibold text-[#b5f30c] bg-[#f0ffd6] px-2 py-[2px] rounded-md w-fit">
+        {item.label}
+      </span>
+
+      {/* Título em duas linhas */}
+      <div className="mt-2 text-lg font-extrabold text-[#1f1f1f] leading-tight">
+        {item.title}
+      </div>
+
+      {/* Botão Comprar */}
+      <button className="mt-3 bg-white text-[#d31e6f] font-bold text-sm px-4 py-1 rounded-md w-fit shadow-sm">
+        {item.button}
+      </button>
+
+      {/* Imagem: canto inferior direito, fora do card */}
+      <img
+        src={item.image}
+        alt={item.title}
+        className="absolute right-[-10px] bottom-0 w-[110px] h-[110px] object-contain"
+      />
+    </div>
+  ))}
 </div>
+
+   
+    </div>
   );
 };
 
