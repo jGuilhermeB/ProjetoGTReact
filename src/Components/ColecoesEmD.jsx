@@ -10,21 +10,24 @@ import sapato from '../assets/sapato.png';
 const featuredCollections = [
   {
     label: '30% OFF',
-    title: 'Supreme Shirt',
-    image: starwars, // camisa da Supreme primeiro
+    title: 'Novo drop \nSupreme',
+    image: starwars,
     button: 'Comprar',
+    imgStyle: { right: '-70px', bottom: '-20px', width: '355px', height: '236px' }, // ajuste individual
   },
   {
     label: '30% OFF',
-    title: 'Tênis Preto',
-    image: sapatopreto, // sapatopreto em segundo
+    title: 'Coleção \nAdidas',
+    image: sapatopreto,
     button: 'Comprar',
+    imgStyle: { right: '-60px', bottom: '-20px', width: '300px', height: '200px' }, // ajuste individual
   },
   {
     label: '30% OFF',
-    title: 'Fone Supreme',
-    image: fonepreto, // fone em terceiro
+    title: 'Novo \nBeats Bass',
+    image: fonepreto,
     button: 'Comprar',
+    imgStyle: { right: '-20px', bottom: '0px', width: '250px', height: '180px' }, // ajuste individual
   },
 ];
 
@@ -44,38 +47,62 @@ const FeaturedSection = () => {
         Coleções em destaque
       </h2>
       {/* Cards principais */}
-<div className="flex gap-4">
-  {featuredCollections.map((item, i) => (
-    <div
-      key={i}
-      className="relative w-[300px] h-[160px] bg-[#e7f1fb] rounded-lg p-4 overflow-hidden flex flex-col justify-between shadow"
-    >
-      {/* Tag de desconto */}
-      <span className="text-[10px] font-semibold text-[#b5f30c] bg-[#f0ffd6] px-2 py-[2px] rounded-md w-fit">
-        {item.label}
-      </span>
+      <div className="flex gap-4">
+        {featuredCollections.map((item, i) => (
+          <div
+            key={i}
+            className="relative w-[405px] h-[251px] bg-[#e7f1fb] rounded-lg p-4 
+            overflow-hidden flex flex-col justify-between shadow"
+          >
+            {/* Imagem de fundo, camada debaixo */}
+            <img
+              src={item.image}
+              alt={item.title}
+              className="absolute right-[-70px] bottom-[-20px] object-contain"
+              style={{ ...item.imgStyle, zIndex: 0 }}
+            />
 
-      {/* Título em duas linhas */}
-      <div className="mt-2 text-lg font-extrabold text-[#1f1f1f] leading-tight">
-        {item.title}
+            {/* Conteúdo do card acima da imagem */}
+            <div className="relative z-10 flex flex-col h-full justify-between">
+              {/* Tag de desconto */}
+              <span className="text-[14px] font-bold text-[#474747] bg-[#E7FF86] px-2 py-[2px] rounded-4xl w-[80px]
+               h-[30px] flex items-center justify-center">
+                {item.label}
+              </span>
+
+              {/* Título em duas linhas */}
+              <div className="mt-2 text-lg font-extrabold text-[#1f1f1f] leading-tight whitespace-pre-line h-[72px] w-[172px]">
+                {item.title}
+              </div>
+
+              {/* Botão Comprar */}
+              <button className="bg-white text-[#d31e6f] font-bold text-sm px-4 py-1 rounded-md h-[48px] w-[153px] whitespace-pre-line 
+              transition-colors duration-200 hover:bg-[#e2d7dc] hover:text-white"
+                style={{ color: '#d31e6f' }}>
+                {item.button}
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
-
-      {/* Botão Comprar */}
-      <button className="mt-3 bg-white text-[#d31e6f] font-bold text-sm px-4 py-1 rounded-md w-fit shadow-sm">
-        {item.button}
-      </button>
-
-      {/* Imagem: canto inferior direito, fora do card */}
-      <img
-        src={item.image}
-        alt={item.title}
-        className="absolute right-[-10px] bottom-0 w-[110px] h-[110px] object-contain"
-      />
-    </div>
-  ))}
-</div>
-
-   
+      {/* Título acima das bolas */}
+      <h2 className="text-xl font-semibold text-[#1f1f1f] mt-8">
+        Coleções em destaque
+      </h2>
+      {/* 5 BOLAS DAS CATEGORIAS */}
+      <div className="flex flex-col items-center gap-6">
+        <div className="flex gap-8">
+          {fiveCategories.map((item, i) => (
+            <div key={i} className="flex flex-col items-center gap-2">
+              <div className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center
+               transition-colors duration-200 hover:bg-[#e7f1fb]">
+                <img src={item.image} alt={item.label} className="w-10 h-10 object-contain" />
+              </div>
+              <span className="text-sm text-[#444]">{item.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
