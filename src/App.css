@@ -39,3 +39,6 @@
   font-family: "Inter", sans-serif;
   
 }
+.slick-list {
+  border-radius: 5px;
+}
