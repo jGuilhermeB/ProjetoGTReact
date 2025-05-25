@@ -1,10 +1,12 @@
 import React from 'react'
+import FeaturedSection from '../Components/ColecoesEmD'
 
 const HomePage = () => {
-    return (
-        <>
-        <h1>ola mundo</h1>
-        </>
-    )
+  return (
+    <div>
+      <FeaturedSection />
+    </div>
+  )
 }
+
 export default HomePage

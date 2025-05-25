@@ -26,7 +26,7 @@ const CustomCarousel = () => {
             <div className="w-[700px] h-[570px] rounded-sm">
                 <Carousel
                     arrows
-                    infinite={false}
+                    infinite={true}
                     dots={false}
                     ref={carouselRef}
                     beforeChange={(_, next) => setSelected(next)}

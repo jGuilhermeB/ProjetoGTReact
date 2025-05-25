@@ -56,7 +56,7 @@ const BuyBox = ({
       <div className="flex items-end gap-2">
         {priceDiscount ? (
           <>
-            <span className="text-[32px] Text X-Small Bold text-[#474747] ">
+            <span className="text-[32px] font-bold text-[#474747] ">
               R$ {priceDiscount?.toFixed(2).replace('.', ',')}
             </span>
             <span className="line-through text-[20px] text-[#CCCCCC] Text X-Small Bold">
@@ -86,7 +86,7 @@ const BuyBox = ({
             <button
               key={size}
               onClick={() => setSelectedSize(size)}
-              className={`w-10 h-10 border rounded-b-lg flex items-center justify-center font-bold text-sm 
+              className={`w-10 h-10 border rounded-md flex items-center justify-center font-bold text-sm 
                 ${selectedSize === size ? 'border-[#C92071] bg-[#C92071] text-white!' : 'border-gray-300 bg-white'}`}
             >
               {size}
@@ -122,24 +122,24 @@ const BuyBox = ({
   );
 };
 
-const ProductViewPage = () => {
-  const { id } = useParams();
-  return (
-    <div className="flex gap-8">
-      <CustomCarousel productId={id} />
-      <BuyBox
-        name="Tênis Nike Revolution 6 Next Nature Masculino"
-        reference="38416711"
-        stars={4.7}
-        rating={90}
-        price={219.0}
-        priceDiscount={199.0}
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-      >
+// const ProductViewPage = () => {
+//   const { id } = useParams();
+//   return (
+//     <div className="flex gap-8">
+//       <CustomCarousel productId={id} />
+//       <BuyBox
+//         name="Tênis Nike Revolution 6 Next Nature Masculino"
+//         reference="38416711"
+//         stars={4.7}
+//         rating={90}
+//         price={219.0}
+//         priceDiscount={199.0}
+//         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+//       >
         
-      </BuyBox>
-    </div>
-  );
-};
+//       </BuyBox>
+//     </div>
+//   );
+// };
 
 export default BuyBox
