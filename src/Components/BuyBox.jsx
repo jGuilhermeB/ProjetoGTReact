@@ -21,7 +21,7 @@ const BuyBox = ({
   const [selectedSize, setSelectedSize] = useState(null);
   const [selectedColor, setSelectedColor] = useState(null);
   return (
-    <div className="w-[700px] h-[570px] rounded-lg flex flex-col gap-4 text-[#1F1F1F] p-6 bg-transparent mt-12">
+    <div className="w-[700px] h-[570px] rounded-lg flex flex-col gap-4 text-[#1F1F1F] p-6 bg-transparent mt-4 ">
       {/* Título */}
 
 
@@ -122,24 +122,5 @@ const BuyBox = ({
   );
 };
 
-// const ProductViewPage = () => {
-//   const { id } = useParams();
-//   return (
-//     <div className="flex gap-8">
-//       <CustomCarousel productId={id} />
-//       <BuyBox
-//         name="Tênis Nike Revolution 6 Next Nature Masculino"
-//         reference="38416711"
-//         stars={4.7}
-//         rating={90}
-//         price={219.0}
-//         priceDiscount={199.0}
-//         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
-//       >
-        
-//       </BuyBox>
-//     </div>
-//   );
-// };
 
 export default BuyBox
