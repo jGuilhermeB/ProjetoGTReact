@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
 @import "antd/dist/reset.css";
+
+
+* {
+  font-family: 'Inter', sans-serif !important;
+}
 
 .ant-carousel .slick-arrow {
   color: #474747!important;
@@ -11,15 +17,17 @@
 }
 
 
+
 .ant-carousel .slick-slide {
+  
   height: 570px !important;
   display: flex !important;
   align-items: center;
   justify-content: center;
   background: transparent !important;
-   width: 570px;
   padding: 0 !important;
   margin: 0 !important;
+  border-radius: 20px !important;
 }
 
 .slide-wrapper {
@@ -28,5 +36,17 @@
    padding: 0 !important;
   margin: 0 !important;
 }
+ .buyboxtitle{
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  
+}
+.slick-list {
+  border-radius: 5px;
+}
 
-    
+body, html, #root {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+}
