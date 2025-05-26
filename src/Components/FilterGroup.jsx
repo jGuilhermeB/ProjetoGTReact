@@ -3,10 +3,11 @@ import React from "react"
 
 const FilterGroup = () => {
   return (
+
     <aside className="w-1/5 bg-white p-4 rounded shadow">
       <h3 className="text-lg font-semibold border-b pb-2 mb-4">Filtrar por</h3>
 
-      
+
       <div className="mb-4">
         <h4 className="font-bold mb-2">Marca</h4>
         <div className=" accent-pink-500 space-y-1 text-sm">
@@ -40,8 +41,8 @@ const FilterGroup = () => {
       <div>
         <h4 className="font-bold mb-2">Estado</h4>
         <div className=" accent-pink-500 space-y-1 text-sm">
-          <label><input type="checkbox" className="mr-1 rounded-full" /> Novo</label><br />
-          <label><input type="checkbox" className="mr-1" /> Usado</label>
+          <label><input type="radio" className="mr-1 rounded-full" /> Novo</label><br />
+          <label><input type="radio" className="mr-1" /> Usado</label>
         </div>
       </div>
     </aside>
