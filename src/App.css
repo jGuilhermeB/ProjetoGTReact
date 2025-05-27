@@ -50,3 +50,17 @@ body, html, #root {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
 }
+
+.slick-dots li button {
+  background: #FFC0CB !important;   /* cor rosa */
+  border-radius: 50% !important;    /* formato bolinha */
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1 !important;
+  border: none !important;
+}
+
+.slick-dots li.slick-active button {
+  background: #d31e6f !important;   /* rosa mais escuro para o ativo */
+  border: 2px solid #d31e6f !important;
+}

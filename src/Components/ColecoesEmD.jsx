@@ -42,11 +42,11 @@ const fiveCategories = [
 
 const FeaturedSection = () => {
   return (
-    <div className="w-full bg-[#f9f9f9] py-12 flex flex-col items-center gap-10">
+    <div className="w-full bg-[#f9f9f9] mt-[1px] flex flex-col items-center gap-10">
       {/* Cards principais em Section */}
       <Section
         title={
-          <span style={{ display: 'block', marginLeft: '310px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
+          <span style={{ display: 'block', marginLeft: '120px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
             Coleções em destaque
           </span>
         }
