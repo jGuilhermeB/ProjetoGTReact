@@ -13,7 +13,7 @@ const ProductListingPage = () => {
       {/* Listagem de produtos */}
       <div className="flex-1 px-8 py-12">
         <ProductProvider>
-          <ProductCard limit={15} className="pt-0 pb-0 grid-cols-1 sm:grid-cols-2 md:grid-cols-3" />
+          <ProductCard limit={15} className="pt-0 pb-0 grid-cols-3 sm:grid-cols-3 md:grid-cols-3" />
         </ProductProvider>
       </div>
     </div>
