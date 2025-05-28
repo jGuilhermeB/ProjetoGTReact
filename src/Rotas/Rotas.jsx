@@ -3,24 +3,27 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
-import Layout  from '../Components/Layout'
+import Layout from '../Components/Layout'
 import FilterGroup from '../Components/FilterGroup'
+import { ProductProvider } from '../context/CardContext'
 
 
 const Rotas = () => {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Layout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path='produtos' element={<ProductListingPage />} />
-                    <Route path='detalhes' element={<ProductViewPage />} />
-                    {/* abaixo daqui apenas para vizualizar  */}
-                     <Route path='FilterGroup' element={<FilterGroup />} />
+        <ProductProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Layout />}>
+                        <Route index element={<HomePage />} />
+                        <Route path='produtos' element={<ProductListingPage />} />
+                        <Route path='detalhes' element={<ProductViewPage />} />
+                        {/* abaixo daqui apenas para vizualizar  */}
+                        <Route path='FilterGroup' element={<FilterGroup />} />
 
-                </Route>
-            </Routes>
-        </BrowserRouter>
+                    </Route>
+                </Routes>
+            </BrowserRouter>
+        </ProductProvider>
     )
 }
 export default Rotas
