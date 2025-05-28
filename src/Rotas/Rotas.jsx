@@ -4,7 +4,7 @@ import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
 import Layout  from '../Components/Layout'
-import FeaturedSection from '../Components/ColecoesEmD'
+import OfertaEspecial from '../Components/OfertaEspecial'
 
 const Rotas = () => {
     return (
@@ -15,7 +15,7 @@ const Rotas = () => {
                     <Route path='produtos' element={<ProductListingPage />} />
                     <Route path='detalhes' element={<ProductViewPage />} />
                     {/* abaixo daqui apenas para vizualizar  */}
-                     {/* <Route path='colecoes' element={<FeaturedSection />} /> */}
+                     <Route path='Ofertaespecial' element={<OfertaEspecial />} />
 
                 </Route>
             </Routes>

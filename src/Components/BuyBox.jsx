@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Star } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 
-import CustomCarousel from '../Components/Carrousel';
 import '../App.css';
 
 const BuyBox = ({

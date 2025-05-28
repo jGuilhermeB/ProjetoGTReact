@@ -4,7 +4,6 @@ import { FaSearch } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png';
 import ornamentImg from '../assets/Ornament.png';
-import OutroSlider from './OutroSlider';
 
 const slides = [
     {
