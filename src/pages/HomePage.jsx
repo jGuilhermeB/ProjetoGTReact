@@ -3,6 +3,7 @@ import OutroSlider from '../Components/OutroSlider'
 import FeaturedSection from '../Components/ColecoesEmD'
 import OfertaEspecial from '../Components/OfertaEspecial'
 import ProductCard from '../Components/ProductCard'
+import { ProductProvider } from '../context/CardContext'
 
 const HomePage = () => {
   return (
