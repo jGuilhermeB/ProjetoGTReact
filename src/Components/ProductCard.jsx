@@ -7,10 +7,11 @@ const ProductCard = ({ limit, className = "" }) => {
   const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
-    <section className={`bg-[#f6f6fe] pt-12 pb-0 px-6 ${className}`}>
+    <section className={`bg-[#f6f6fe] pt-12 pb- px-2 ${className}`}>
       <div className="container mx-auto">
-        {/* Cards em grid 3 colunas */}
-        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center`}>
+
+        {/* Cards em grid 4 colunas */}
+        <div className={`grid grid-cols-4 m:grid-cols-4 md:grid-cols-4 justify-items-center`}>
           {displayedProducts.map((product) => (
             <div
               key={product.id}

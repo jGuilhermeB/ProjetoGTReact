@@ -26,6 +26,7 @@ const ProductViewPage = () => {
         </div>
       </div>
       {/* Cards recomendados */}
+       
       <div className="w-full mt-12 mb-0">
         <ProductProvider>
           <ProductCard limit={4} className="mt-16" />

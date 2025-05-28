@@ -1,5 +1,6 @@
 import React from 'react'
 import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png'
+import Section from './Section'
 
 // const MiniCards = () => {
 //   return (
@@ -20,6 +21,7 @@ const ShowThumbs = ({ selected, onSelect }) => {
 
   return (
     <div className="flex gap-4 mt-4 justify-center">
+      
       {thumbs.map((thumb, idx) => (
         <div
           key={idx}
@@ -33,8 +35,11 @@ const ShowThumbs = ({ selected, onSelect }) => {
             className="object-contain w-[90px] h-[70px]"
           />
         </div>
+        
       ))}
+    
     </div>
+    
   )
 }
 
