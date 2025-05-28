@@ -1,8 +1,10 @@
 import React, { createContext, useState } from "react";
 import teniscard from "../assets/teniscard.svg";
 
+// Criação do contexto
 const ProductContext = createContext();
 
+// Provider
 const ProductProvider = ({ children }) => {
   const [products, setProducts] = useState(
     Array.from({ length: 15 }).map((_, i) => ({
@@ -20,10 +22,11 @@ const ProductProvider = ({ children }) => {
     const ordenados = [...products];
 
     if (ordem === "low") {
-      ordenados.sort((a, b) => {return a.discountPrice - b.discountPrice});
+      ordenados.sort((a, b) => a.discountPrice - b.discountPrice);
     } else if (ordem === "high") {
-      ordenados.sort((a, b) => {return b.discountPrice - a.discountPrice});
+      ordenados.sort((a, b) => b.discountPrice - a.discountPrice);
     }
+
     setProducts(ordenados);
   };
 
@@ -33,8 +36,6 @@ const ProductProvider = ({ children }) => {
     </ProductContext.Provider>
   );
 };
-export {
-  ProductContext,
-  ProductProvider
-}
 
+// 🔁 Exporte fora de qualquer função ou bloco
+export { ProductContext, ProductProvider };

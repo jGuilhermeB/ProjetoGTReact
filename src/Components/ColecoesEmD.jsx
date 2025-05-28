@@ -46,7 +46,7 @@ const FeaturedSection = () => {
       {/* Cards principais em Section */}
       <Section
         title={
-          <span style={{ display: 'block', marginLeft: '120px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
+          <span style={{ display: 'block', marginLeft: '380px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
             Coleções em destaque
           </span>
         }

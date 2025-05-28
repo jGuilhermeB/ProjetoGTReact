@@ -5,6 +5,7 @@
 
 * {
   font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
 }
 
 .ant-carousel .slick-arrow {
@@ -46,10 +47,7 @@
   border-radius: 5px;
 }
 
-body, html, #root {
-  font-family: 'Inter', sans-serif !important;
-  font-weight: 700 !important;
-}
+
 
 .slick-dots li button {
   background: #FFC0CB !important;   /* cor rosa */
