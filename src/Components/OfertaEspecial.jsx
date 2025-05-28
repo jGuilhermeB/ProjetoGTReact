@@ -3,7 +3,7 @@ import airJordanImg from '../assets/Layer.svg';
 
 function OfertaEspecial() {
   return (
-    <div className="bg-white w-full h-[553px] flex flex-col md:flex-row items-center justify-between">
+    <div className="bg-white w-full  h-[553px] flex flex-col md:flex-row items-center justify-between">
       {/* Imagem do tênis com fundo redondo */}
       
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
@@ -28,7 +28,9 @@ function OfertaEspecial() {
           Air Jordan edição de colecionador
         </h2>
         <p className="text-gray-600 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit, sed do eiusmod tempor 
+          incididunt ut
           labore et dolore magna aliqua.
         </p>
         <button className="bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700 transition">

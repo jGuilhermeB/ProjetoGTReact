@@ -11,7 +11,7 @@ const HomePage = () => {
       <OutroSlider />
       <FeaturedSection />
       <ProductProvider>
-        <ProductCard />
+        <ProductCard limit={8} className="mt-16 relative w-full gap-4 mb-5 justify-around" />
       </ProductProvider>
       <OfertaEspecial />
     </div>
