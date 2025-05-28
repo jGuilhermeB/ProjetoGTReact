@@ -4,6 +4,7 @@ import CustomCarousel from '../Components/Carrousel'
 import BuyBox from '../Components/BuyBox'
 import ProductCard from '../Components/ProductCard'
 import { ProductProvider } from '../Context/CardContext'
+import Section from '../Components/Section'
 
 const ProductViewPage = () => {
   const { id } = useParams()
@@ -28,12 +29,21 @@ const ProductViewPage = () => {
       {/* Cards recomendados */}
        
       <div className="w-full mt-12 mb-0">
+      <Section
+        title={
+          <span style={{ display: 'block', marginLeft: '120px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
+            Coleções em destaque
+            </span>
+        }
+        titleAlign="left"
+        >
         <ProductProvider>
           <ProductCard limit={4} className="mt-16" />
         </ProductProvider>
+        </Section>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default ProductViewPage
