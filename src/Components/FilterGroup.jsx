@@ -10,7 +10,7 @@ const FilterGroup = () => {
       <div className="mb-4">
         <h4 className="font-bold mb-2">Marca</h4>
         <div className=" accent-pink-500 space-y-1 text-sm">
-          <label><input type="checkbox" className="mr-1" /> Adidas</label><br />
+          <label><input type="checkbox" className="mr-1" /> Adidaas</label><br />
           <label><input type="checkbox" className="mr-1" /> Balenciaga</label><br />
           <label><input type="checkbox" className="mr-1" checked /> K-Swiss</label><br />
           <label><input type="checkbox" className="mr-1" /> Nike</label><br />
