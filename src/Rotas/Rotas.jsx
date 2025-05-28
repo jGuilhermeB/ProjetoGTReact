@@ -4,7 +4,7 @@ import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
 import Layout  from '../Components/Layout'
-import ProductCard from '../Components/ProductCard'
+import FilterGroup from '../Components/FilterGroup'
 
 
 const Rotas = () => {
@@ -16,7 +16,7 @@ const Rotas = () => {
                     <Route path='produtos' element={<ProductListingPage />} />
                     <Route path='detalhes' element={<ProductViewPage />} />
                     {/* abaixo daqui apenas para vizualizar  */}
-                     <Route path='cards' element={<ProductCard />} />
+                     <Route path='FilterGroup' element={<FilterGroup />} />
 
                 </Route>
             </Routes>
