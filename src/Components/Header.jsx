@@ -14,7 +14,7 @@ const slides = [
         buttonUrl: '#',
         image: sneakerImg,
         ornament: ornamentImg,
-        bgColor: '#F9F8FE',
+        bgColor: '#DB2777',
     },
     {
         title: 'Queima de estoque Nike 🔥',
@@ -24,7 +24,7 @@ const slides = [
         buttonUrl: '#',
         image: sneakerImg,
         ornament: ornamentImg,
-        bgColor: '#F9F8FE',
+        bgColor: '#DB2777',
     },
     {
         title: 'Queima de estoque Nike 🔥',
@@ -34,7 +34,7 @@ const slides = [
         buttonUrl: '#',
         image: sneakerImg,
         ornament: ornamentImg,
-        bgColor: '#F9F8FE',
+        bgColor: '#DB2777',
     },
 ];
 
@@ -44,10 +44,11 @@ export default function Header() {
             {/* Header */}
             <header className="flex items-center justify-between px-10 py-6">
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-pink-600 rounded-full flex items-center justify-center">
-                        <span className="text-white text-xl font-bold">&gt;</span>
-                    </div>
-                    <h1 className="text-pink-700 text-2xl font-bold">Digital Store</h1>
+                      <img
+                            src="public/logo-header.svg"
+                            alt="Logo"
+                            className="w-full h-full object-cover"
+                        />
                 </div>
 
                 <div className="flex items-center w-96 bg-gray-100 rounded px-4 py-2">
@@ -66,7 +67,7 @@ export default function Header() {
                     >
                         Cadastre-se
                     </a>
-                    <Button
+                    <Button style={{ backgroundColor: '#DB2777', color: '#fff', border: 'none' }}
                         className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded"
                         type="primary"
                     >
