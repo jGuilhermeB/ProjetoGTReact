@@ -46,7 +46,7 @@
   border-radius: 5px;
 }
 
-body, html, #root {
+* {
   font-family: 'Inter', sans-serif !important;
   font-weight: 700 !important;
 }

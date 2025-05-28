@@ -9,16 +9,16 @@ const ProductCard = ({ limit, className = "" }) => {
     <section className={`bg-[#f6f6fe] pt-12 pb- px-2 ${className}`}>
       <div className="container mx-auto">
         {/* Cards em grid 4 colunas */}
-        <div className="grid grid-cols-4 m:grid-cols-4 md:grid-cols-4 gap-4 justify-items-center">
-          {displayedProducts.map((product) => (
-            <div key={product.id} className="flex flex-col items-center">
+        <div className="grid grid-cols-4 m:grid-cols-4 md:grid-cols-4 gap-10 justify-items-center">
+          {displayedProducts.map(({id,...product}) => (
+            <div key={product.title} className="flex flex-col items-center">
               {/* Card */}
-              <div className="relative bg-white w-[320px] h-[380px] rounded-md overflow-hidden shadow-sm flex flex-col">
+              <div className="relative bg-white w-[321px] h-[292px] rounded-md flex flex-col">
                 <div className="relative bg-white h-[180px] flex items-center justify-center">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="h-28 object-contain"
+                    className="h-[300px] mt-[100px] "
                   />
                   {product.hasDiscount && (
                     <span className="absolute top-2 left-2 bg-lime-200 text-xs text-black font-bold px-2 py-1 rounded-md">
