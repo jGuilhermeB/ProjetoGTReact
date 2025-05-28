@@ -5,6 +5,7 @@ function OfertaEspecial() {
   return (
     <div className="bg-white w-full h-[553px] flex flex-col md:flex-row items-center justify-between">
       {/* Imagem do tênis com fundo redondo */}
+      
       <div className="md:w-1/2 flex justify-center mb-8 md:mb-0">
         <div className="relative w-full md:w-1/2 flex justify-center">
           <img

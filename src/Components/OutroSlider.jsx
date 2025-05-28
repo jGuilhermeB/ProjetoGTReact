@@ -56,7 +56,7 @@ const OutroSlider = () => {
       onMouseLeave={() => setAutoplay(true)}
     >
       {/* Slides */}
-      <div className="relative h-[500px] md:h-[80vh] min-h-[500px]">
+      <div className="relative h-[800px] md:h-[80vh] min-h-[500px]">
         {slides.map((slide, index) => (
           <div
             key={index}
@@ -65,13 +65,13 @@ const OutroSlider = () => {
             }`}
             style={{ backgroundColor: slide.bgColor }}
           >
-            <div className="flex justify-between items-center h-full w-full px-20">
+            <div className="flex justify-between items-center h-full w-full px-10">
               {/* Texto */}
               <div className="w-full max-w-xl">
                 <p className="text-orange-500 font-semibold mb-2">
                   Melhores ofertas personalizadas
                 </p>
-                <h2 className="text-5xl font-extrabold mb-4">{slide.title}</h2>
+                <h1 className="text-8xl font-black mb-4">{slide.title}</h1>
                 <p className="text-gray-500 mb-8">{slide.description}</p>
                 <a
                   href={slide.buttonUrl}
@@ -85,40 +85,19 @@ const OutroSlider = () => {
                 <img
                   src={slide.ornament}
                   alt="bolinhas"
-                  className="absolute top-5 right-10 w-24 h-24"
+                  className="relative left-170 top-0 w-42 h-42"
                 />
                 <img
                   src={slide.image}
                   alt="Tênis"
-                  className="rotate-[345deg] w-[500px]"
+                  className="relative bottom-20 right-25 rotate-[345deg] w-[800px]"
                 />
               </div>
             </div>
           </div>
         ))}
       </div>
-
-      {/* Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-20 transition-all"
-        aria-label="Anterior"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center z-20 transition-all"
-        aria-label="Próximo"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
-
+  
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, index) => (
@@ -126,7 +105,7 @@ const OutroSlider = () => {
             key={index}
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all ${
-              currentSlide === index ? 'bg-pink-600 w-5' : 'bg-pink-300'
+              currentSlide === index ? 'bg-pink-600 w-3' : 'bg-pink-300'
             }`}
             aria-label={`Ir para o slide ${index + 1}`}
           ></button>

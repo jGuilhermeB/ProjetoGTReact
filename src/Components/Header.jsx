@@ -7,7 +7,7 @@ import ornamentImg from '../assets/Ornament.png';
 
 const slides = [
     {
-        title: 'Queima de estoque Nike 🔥',
+        title: 'Queima de estoque Nike',
         description:
             'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
         buttonText: 'Ver Ofertas',
@@ -17,7 +17,7 @@ const slides = [
         bgColor: '#DB2777',
     },
     {
-        title: 'Queima de estoque Nike 🔥',
+        title: 'Queima de estoque Nike',
         description:
             'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
         buttonText: 'Ver Ofertas',
@@ -27,7 +27,7 @@ const slides = [
         bgColor: '#DB2777',
     },
     {
-        title: 'Queima de estoque Nike 🔥',
+        title: 'Queima de estoque Nike',
         description:
             'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
         buttonText: 'Ver Ofertas',
@@ -40,7 +40,7 @@ const slides = [
 
 export default function Header() {
     return (
-        <div className="max-h-screen" style={{ background: '#F5F5F5' }}>
+        <div className="max-h-screen" style={{ background: '#FFFFFF' }}>
             {/* Header */}
             <header className="flex items-center justify-between px-10 py-6">
                 <div className="flex items-center gap-2">
@@ -51,13 +51,13 @@ export default function Header() {
                         />
                 </div>
 
-                <div className="flex items-center w-96 bg-gray-100 rounded px-4 py-2">
+                <div className="flex items-center w-250 bg-gray-50 rounded px-4 py-4">
                     <input
                         type="text"
                         placeholder="Pesquisar produto..."
                         className="bg-transparent outline-none flex-1 text-sm"
                     />
-                    <FaSearch className="text-gray-500 h-4 w-4" />
+                    <FaSearch className="text-gray-200 h-4 w-4" />
                 </div>
 
                 <div className="flex items-center gap-4">
