@@ -4,31 +4,31 @@ import ornamentImg from '../assets/Ornament.png';
 
 const slides = [
   {
-    title: 'Queima de estoque Nike 🔥',
+    title: 'Queima de estoque Nike',
     description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
     ornament: ornamentImg,
-    bgColor: '#F9F8FE',
+    bgColor: '#F5F5F5',
   },
   {
-    title: 'Queima de estoque Nike 🔥',
+    title: 'Queima de estoque Nike',
     description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
     ornament: ornamentImg,
-    bgColor: '#F9F8FE',
+    bgColor: '#F5F5F5',
   },
   {
-    title: 'Queima de estoque Nike 🔥',
+    title: 'Queima de estoque Nike',
     description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
     ornament: ornamentImg,
-    bgColor: '#F9F8FE',
+    bgColor: '#F5F5F5',
   },
 ];
 
@@ -65,7 +65,7 @@ const OutroSlider = () => {
             }`}
             style={{ backgroundColor: slide.bgColor }}
           >
-            <div className="flex justify-between items-center h-full w-full px-10">
+            <div className="flex justify-between items-center h-full w-full px-30">
               {/* Texto */}
               <div className="w-full max-w-xl">
                 <p className="text-orange-500 font-semibold mb-2">
@@ -85,12 +85,12 @@ const OutroSlider = () => {
                 <img
                   src={slide.ornament}
                   alt="bolinhas"
-                  className="relative left-170 top-0 w-42 h-42"
+                  className="relative left-160 top-0 w-42 h-42"
                 />
                 <img
                   src={slide.image}
                   alt="Tênis"
-                  className="relative bottom-20 right-25 rotate-[345deg] w-[800px]"
+                  className="relative bottom-20 right-25 rotate-[337deg] w-[733.51px]"
                 />
               </div>
             </div>

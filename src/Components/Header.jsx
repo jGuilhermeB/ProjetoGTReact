@@ -42,7 +42,7 @@ export default function Header() {
     return (
         <div className="max-h-screen" style={{ background: '#FFFFFF' }}>
             {/* Header */}
-            <header className="flex items-center justify-between px-10 py-6">
+            <header className="flex items-center justify-between px-30 py-6">
                 <div className="flex items-center gap-2">
                       <img
                             src="public/logo-header.svg"
@@ -51,7 +51,7 @@ export default function Header() {
                         />
                 </div>
 
-                <div className="flex items-center w-250 bg-gray-50 rounded px-4 py-4">
+                <div className="flex items-center w-220 bg-gray-50 rounded px-4 py-2">
                     <input
                         type="text"
                         placeholder="Pesquisar produto..."
@@ -83,7 +83,7 @@ export default function Header() {
             </header>
 
             {/* Navbar */}
-            <nav className="flex gap-8 px-10 py-4">
+            <nav className="flex gap-8 px-30 py-4">
                 <a
                     href="#"
                     className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold"
