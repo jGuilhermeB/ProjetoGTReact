@@ -5,7 +5,7 @@ import { FaTwitter } from "react-icons/fa6"
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#1F1F1F] w-full mt-[100%] p-5">
+    <footer className="bg-[#1F1F1F] w-full p-5">
       <nav className="p-10">
         <div className="flex flex-col md:flex-row justify-between items-start w-full gap-10 text-white">
           
