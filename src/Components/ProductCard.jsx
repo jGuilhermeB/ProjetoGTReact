@@ -2,15 +2,16 @@ import React, { useContext } from "react";
 import { ProductContext } from "../Context/CardContext";
 
 
-const ProductCard = () => {
+const ProductCard = ({ limit, className = "" }) => {
   const products = useContext(ProductContext);
+  const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
-    <section className="bg-[#f6f6fe] py-12 px-6">
+    <section className={`bg-[#f6f6fe] pt-12 pb-0 px-6 ${className}`}>
       <div className="container mx-auto">
         {/* Cards em grid 4 colunas */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-items-center">
-          {products.map((product) => (
+          {displayedProducts.map((product) => (
             <div
               key={product.id}
               className="bg-white w-[320px] h-[380px] rounded-md overflow-hidden shadow-sm flex flex-col"
