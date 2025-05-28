@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { ProductContext } from "../Context/CardContext";
-
+import { ProductContext } from "../context/CardContext";
 
 const ProductCard = ({ limit, className = "" }) => {
-  const products = useContext(ProductContext);
+  const { products } = useContext(ProductContext);
   const displayedProducts = limit ? products.slice(0, limit) : products;
 
   return (
