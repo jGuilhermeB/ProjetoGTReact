@@ -4,7 +4,8 @@ import FeaturedSection from '../Components/ColecoesEmD'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="w-full flex flex-col items-center bg-[#f9f9f9]">
+      <OutroSlider />
       <FeaturedSection />
     </div>
   )

@@ -5,7 +5,6 @@ import { FaCartShopping } from 'react-icons/fa6';
 import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png';
 import ornamentImg from '../assets/Ornament.png';
 import OutroSlider from './OutroSlider';
-import FeaturedSection from './ColecoesEmD';
 
 const slides = [
     {
@@ -41,24 +40,8 @@ const slides = [
 ];
 
 export default function Header() {
-    const [currentSlide, setCurrentSlide] = useState(0);
-    const [autoplay, setAutoplay] = useState(true);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (autoplay) {
-                setCurrentSlide((prev) => (prev + 1) % slides.length);
-            }
-        }, 5000);
-        return () => clearInterval(interval);
-    }, [autoplay]);
-
-    const goToSlide = (index) => setCurrentSlide(index);
-    const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-    const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-
     return (
-        <div className="min-h-screen" style={{ background: '#F5F5F5' }}>
+        <div className="max-h-screen" style={{ background: '#F5F5F5' }}>
             {/* Header */}
             <header className="flex items-center justify-between px-10 py-6">
                 <div className="flex items-center gap-2">
@@ -126,7 +109,7 @@ export default function Header() {
                     Meus Pedidos
                 </a>
             </nav>
-            <OutroSlider />
+            
         </div>
     );
 }
