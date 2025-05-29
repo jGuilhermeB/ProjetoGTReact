@@ -46,7 +46,7 @@ const FeaturedSection = () => {
       {/* Cards principais em Section */}
       <Section
         title={
-          <span style={{ display: 'block', marginLeft: '380px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
+          <span style={{ display: 'block', marginLeft: '310px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
             Coleções em destaque
           </span>
         }
@@ -63,7 +63,7 @@ const FeaturedSection = () => {
               <img
                 src={item.image}
                 alt={item.title}
-                className="absolute right-[-70px] bottom-[-20px] object-contain"
+                className="absolute right-[-70px] bottom-[-20px] object-contain w-[64px] h-[50px]"
                 style={{ ...item.imgStyle, zIndex: 0 }}
               />
 
@@ -99,9 +99,9 @@ const FeaturedSection = () => {
           <div className="flex gap-8">
             {fiveCategories.map((item, i) => (
               <div key={i} className="flex flex-col items-center gap-2">
-                <div className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center
+                <div className="w-[104px] h-[104px] rounded-full bg-white shadow flex items-center justify-center
                  transition-colors duration-200 hover:bg-[#e7f1fb]">
-                  <img src={item.image} alt={item.label} className="w-10 h-10 object-contain" />
+                  <img src={item.image} alt={item.label} className="w-14 h-14 object-contain" />
                 </div>
                 <span className="text-sm text-[#444]">{item.label}</span>
               </div>

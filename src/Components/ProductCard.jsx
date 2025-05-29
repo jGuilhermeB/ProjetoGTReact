@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../context/CardContext";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ limit, className = "" }) => {
   const { products } = useContext(ProductContext);
@@ -8,17 +9,22 @@ const ProductCard = ({ limit, className = "" }) => {
   return (
     <section className={`bg-[#f6f6fe] pt-12 pb- px-2 ${className}`}>
       <div className="container mx-auto">
-        {/* Cards em grid 4 colunas */}
-        <div className="grid grid-cols-4 m:grid-cols-4 md:grid-cols-4 gap-10 justify-items-center">
-          {displayedProducts.map(({id,...product}) => (
-            <div key={product.title} className="flex flex-col items-center">
+        {/* Cards em grid com gap de 10px */}
+        <div className={`grid w-full ${className}`}>
+          {displayedProducts.map(({ id, ...product }) => (
+            <Link
+              key={product.title}
+              to={`/detalhes/${id}`} // Alterado de "/produtos" para incluir o id
+              className="flex flex-col items-center cursor-pointer"
+              style={{ textDecoration: "none" }}
+            >
               {/* Card */}
               <div className="relative bg-white w-[321px] h-[292px] rounded-md flex flex-col">
                 <div className="relative bg-white h-[180px] flex items-center justify-center">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="h-[300px] mt-[100px] "
+                    className="h-[300px] mt-[100px]"
                   />
                   {product.hasDiscount && (
                     <span className="absolute top-2 left-2 bg-lime-200 text-xs text-black font-bold px-2 py-1 rounded-md">
@@ -29,10 +35,12 @@ const ProductCard = ({ limit, className = "" }) => {
               </div>
 
               {/* Detalhes fora do card */}
-              <div className="text-center mt-2">
-                <p className="text-xs text-gray-500 font-medium">{product.category}</p>
-                <h3 className="text-sm font-semibold mt-1">{product.title}</h3>
-                <div className="text-sm mt-2">
+              <div className="text-center">
+                <p className="text-xs text-gray-500 font-medium">
+                  {product.category}
+                </p>
+                <h3 className="text-sm font-semibold">{product.title}</h3>
+                <div className="text-sm">
                   <span className="line-through text-gray-400 mr-1">
                     ${product.originalPrice}
                   </span>
@@ -41,7 +49,7 @@ const ProductCard = ({ limit, className = "" }) => {
                   </span>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

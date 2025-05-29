@@ -10,7 +10,7 @@ const ProductProvider = ({ children }) => {
     Array.from({ length: 15 }).map((_, i) => ({
       id: i + 1,
       image: teniscard,
-      title: `K-Swiss V8 - Masculino #${i + 1}`,
+      title: `K-Swiss V8 - Masculino`,
       category: "Tênis",
       originalPrice: 200 + i * 10,
       discountPrice: 100 + i * 5,

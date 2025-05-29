@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import CustomCarousel from '../Components/Carrousel'
 import BuyBox from '../Components/BuyBox'
 import ProductCard from '../Components/ProductCard'
-import { ProductProvider } from '../Context/CardContext'
 import Section from '../Components/Section'
 
 const ProductViewPage = () => {
@@ -37,9 +36,10 @@ const ProductViewPage = () => {
         }
         titleAlign="left"
         >
-        <ProductProvider>
-          <ProductCard limit={4} className="mt-16" />
-        </ProductProvider>
+          <ProductCard 
+  limit={4} 
+  className="grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[10px]" 
+/>
         </Section>
       </div>
     </div>

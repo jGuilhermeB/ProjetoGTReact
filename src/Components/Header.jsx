@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Carousel, Button } from 'antd';
 import { FaSearch } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
+import { Link } from "react-router-dom";
 import sneakerImg from '../assets/White-Sneakers-PNG-Clipart 2.png';
 import ornamentImg from '../assets/Ornament.png';
 
@@ -84,18 +85,18 @@ export default function Header() {
 
             {/* Navbar */}
             <nav className="flex gap-8 px-30 py-4">
-                <a
-                    href="#"
+                <Link
+                    to="/"
                     className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold"
                 >
                     Home
-                </a>
-                <a
-                    href="#"
+                </Link>
+                <Link
+                    to="/produtos"
                     className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold"
                 >
                     Produtos
-                </a>
+                </Link>
                 <a
                     href="#"
                     className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold"

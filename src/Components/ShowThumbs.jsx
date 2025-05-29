@@ -16,6 +16,7 @@ const ShowThumbs = ({ selected, onSelect }) => {
     { bg: '#E2E3FF' },
     { bg: '#FFE8BC' },
     { bg: '#FFC0BC' },
+    { bg: '#DEC699' },
     { bg: '#E8DFCF' }
   ]
 

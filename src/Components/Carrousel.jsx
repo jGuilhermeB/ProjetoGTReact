@@ -8,7 +8,8 @@ const slides = [
   { bg: '#E2E3FF' },
   { bg: '#FFE8BC' },
   { bg: '#FFC0BC' },
-  { bg: '#E8DFCF' },
+  { bg: '#DEC699' },
+  { bg: '#E8DFCF' }, // Novo slide adicionado
 ];
 
 const CustomCarousel = () => {
