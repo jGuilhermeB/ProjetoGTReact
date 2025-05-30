@@ -67,7 +67,7 @@ export default function Header() {
       {/* Header */}
       <header className="flex items-center justify-between px-30 py-6">
         <div className="flex items-center gap-2">
-          <Link to="#">
+          <Link to="/">
             <img
               src="/logo-header.svg"
               alt="Logo"
@@ -136,7 +136,7 @@ export default function Header() {
       {/* Navbar */}
       <nav className="flex gap-8 px-30 py-4">
         <Link
-          to="#"
+          to="/"
           className="text-gray-600 hover:text-pink-600 hover:underline hover:font-bold"
         >
           Home
