@@ -27,7 +27,7 @@ const ShowThumbs = ({ selected, onSelect }) => {
         <div
           key={idx}
           className={`w-[117px] h-[95px] rounded-sm flex items-center justify-center cursor-pointer border-2 ${selected === idx ? 'border-[#C92071]' : 'border-transparent'}`}
-          style={{ background: thumb.bg }}
+          style={{ background: thumb.bg, overflow: 'hidden' }}
           onClick={() => onSelect(idx)}
         >
           <img

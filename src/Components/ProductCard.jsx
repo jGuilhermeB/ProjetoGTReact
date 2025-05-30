@@ -10,7 +10,7 @@ const ProductCard = ({ limit, className = "" }) => {
     <section className={`bg-[#f6f6fe] pt-12 pb- px-2 ${className}`}>
       <div className="container mx-auto">
         {/* Cards em grid com gap de 10px */}
-        <div className={`grid w-full ${className}`}>
+        <div className={`grid gap-6 ${className}`}>
           {displayedProducts.map(({ id, ...product }) => (
             <Link
               key={product.title}

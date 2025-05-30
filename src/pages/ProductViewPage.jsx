@@ -30,8 +30,8 @@ const ProductViewPage = () => {
       <div className="w-full mt-12 mb-0">
       <Section
         title={
-          <span style={{ display: 'block', marginLeft: '120px', marginTop:'1000px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
-            Coleções em destaque
+          <span style={{ display: 'block', marginLeft: '120px', marginTop:'100px', fontSize: '24px', fontWeight: 'bold', color: '#474747' }}>
+            Produtos Relacionados
             </span>
         }
         titleAlign="left"
