@@ -33,7 +33,8 @@ function OfertaEspecial() {
           incididunt ut
           labore et dolore magna aliqua.
         </p>
-        <button className="bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700 transition">
+        <button  style={{ backgroundColor: '#DB2777', color: '#fff', border: 'none' }}
+        className="bg-pink-600 text-white px-6 py-2 rounded-md hover:bg-pink-700 transition">
           Ver Oferta
         </button>
       </div>
