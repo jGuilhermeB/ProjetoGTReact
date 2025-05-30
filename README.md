@@ -1,12 +1,94 @@
-# React + Vite
+# Projeto GT React — DripStore
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma loja online de tênis desenvolvida com React e JavaScript, onde os usuários podem navegar pelas principais seções disponíveis, buscar produtos ou explorar as vitrines para encontrar o produto ideal.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* React
+* JavaScript
+* TailwindCSS
+* Ant Design (AntD)
+* React Router DOM
+* React Icons (Font Awesome e outros)
 
-## Expanding the ESLint configuration
+## 👥 Equipe de Desenvolvimento
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Artur — Header e Slider Principal
+* Guilherme — Carrossel de Compra e Seções de Coleções em Destaque
+* Marcelo — Cards dos Produtos
+* Douglas — Seção de Ofertas Especiais
+* Leonardo — Footer e Aside
+
+## 📂 Estrutura de Pastas
+
+```
+├── public
+├── src
+│   ├── assets           # Imagens e arquivos estáticos
+│   ├── components       # Componentes reutilizáveis (Header, Footer, Cards, Slider)
+│   ├── context          # Gerenciamento de estado global (Context API)
+│   ├── pages            # Páginas principais (Home, Listagem, Detalhes)
+│   ├── rotas            # Configuração de rotas (React Router)
+│   ├── App.jsx          # Componente raiz da aplicação
+│   ├── App.css          # Estilos globais
+│   └── main.jsx         # Ponto de entrada da aplicação
+├── .gitignore
+├── README.md
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── index.html
+```
+
+## 🚀 Como Rodar o Projeto
+
+### ✅ Pré-requisitos
+
+* Node.js (versão recomendada LTS)
+* npm ou yarn instalado
+
+### 🔽 Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/jGuilhermeB/ProjetoGTReact
+```
+
+Acesse o diretório do projeto:
+
+```bash
+cd ProjetoGTReact
+```
+
+Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn install
+```
+
+Inicie o servidor de desenvolvimento:
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+Abra no navegador:
+
+```
+http://localhost:5173
+```
+
+## 💼 Licença
+
+Este projeto foi desenvolvido para fins educacionais e acadêmicos, sem fins comerciais.
+
+---
+
+Se você gostou deste projeto, deixe uma nota boa pro projeto!
+
+---
