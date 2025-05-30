@@ -4,7 +4,7 @@ import HomePage from '../pages/HomePage'
 import ProductListingPage from '../pages/ProductListingPage'
 import ProductViewPage from '../pages/ProductViewPage'
 import Layout from '../Components/Layout'
-import { ProductProvider } from '../context/CardContext'
+import { ProductProvider } from '../Context/CardContext.jsx'
 
 
 

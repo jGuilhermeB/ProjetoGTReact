@@ -1,6 +1,6 @@
 import React from "react";
 import { useContext } from "react"
-import { ProductContext } from "../context/CardContext"
+import { ProductContext } from "../Context/CardContext"
 
 const OrdenacaoRelevante = () => {
   const { ordenarProdutos } = useContext(ProductContext)

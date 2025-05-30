@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ProductContext } from "../context/CardContext";
+import { ProductContext } from "../Context/CardContext";
 import { Link } from "react-router-dom";
 
 const ProductCard = ({ limit, className = "" }) => {
