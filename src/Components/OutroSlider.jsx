@@ -4,8 +4,10 @@ import ornamentImg from '../assets/Ornament.png';
 
 const slides = [
   {
-    title: 'Queima de estoque Nike',
-    description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
+    titleLines: ['Queima de', 'estoque Nike'],
+    descriptionLines: [
+      'Domine as quadras com os tênis Nike! Conforto, estilo e design.',
+    ],
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
@@ -13,8 +15,10 @@ const slides = [
     bgColor: '#F5F5F5',
   },
   {
-    title: 'Queima de estoque Nike',
-    description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
+    titleLines: ['Queima de', 'estoque Nike'],
+    descriptionLines: [
+      'Domine as quadras com os tênis Nike! Conforto, estilo e design.',
+    ],
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
@@ -22,8 +26,10 @@ const slides = [
     bgColor: '#F5F5F5',
   },
   {
-    title: 'Queima de estoque Nike',
-    description: 'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.',
+    titleLines: ['Queima de', 'estoque Nike'],
+    descriptionLines: [
+      'Domine as quadras com os tênis Nike! Conforto, estilo e design.',
+    ],
     buttonText: 'Ver Ofertas',
     buttonUrl: '#',
     image: sneakerImg,
@@ -46,8 +52,6 @@ const OutroSlider = () => {
   }, [autoplay]);
 
   const goToSlide = (index) => setCurrentSlide(index);
-  const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
 
   return (
     <div
@@ -67,37 +71,61 @@ const OutroSlider = () => {
           >
             <div className="flex justify-between items-center h-full w-full px-30">
               {/* Texto */}
-              <div className="w-full max-w-xl">
-                <p className="text-orange-500 font-semibold mb-2">
-                  Melhores ofertas personalizadas
-                </p>
-                <h1 className="text-8xl font-black mb-4">{slide.title}</h1>
-                <p className="text-gray-500 mb-8">{slide.description}</p>
-                <a
-                  href={slide.buttonUrl}
-                  className="bg-pink-600 hover:bg-pink-700 px-6 py-3 rounded text-white font-bold text-lg"
-                >
-                  {slide.buttonText}
-                </a>
+              <div className="w-full max-w-xl flex flex-col justify-between h-[300px]">
+                <div>
+                  <p className="text-orange-500 font-semibold mb-2">
+                    Melhores ofertas personalizadas
+                  </p>
+                  <h1
+                    className="font-black leading-tight"
+                    style={{ fontSize: '3.6rem' }}
+                  >
+                    {slide.titleLines.map((line, i) => (
+                      <div key={i}>{line}</div>
+                    ))}
+                  </h1>
+                </div>
+
+                <div>
+                  <p
+                    className="text-gray-500 font-extralight text-sm h-[80px]"
+                    style={{ lineHeight: '1.4', maxWidth: '24ch' }}
+                  >
+                    {slide.descriptionLines.map((line, i) => (
+                      <div key={i}>{line}</div>
+                    ))}
+                  </p>
+
+                </div>
+
+                <div>
+                  <a
+                    href={slide.buttonUrl}
+                    className="bg-pink-600 hover:bg-pink-700 px-12 py-2 rounded text-white"
+                  >
+                    {slide.buttonText}
+                  </a>
+                </div>
               </div>
+
               {/* Imagens */}
-              <div className="relative mr-20">
+              <div className="relative mr-10">
                 <img
                   src={slide.ornament}
                   alt="bolinhas"
-                  className="relative left-160 top-0 w-42 h-42"
+                  className="relative left-110 top-0 w-42 h-42"
                 />
                 <img
                   src={slide.image}
                   alt="Tênis"
-                  className="relative bottom-20 right-25 rotate-[337deg] w-[733.51px]"
+                  className="relative bottom-20 right-5 rotate-[337deg] w-[733.51px]"
                 />
               </div>
             </div>
           </div>
         ))}
       </div>
-  
+
       {/* Dots */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-20">
         {slides.map((_, index) => (
